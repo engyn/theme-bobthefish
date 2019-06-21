@@ -96,7 +96,7 @@ function __bobthefish_timestamp_left -S -d 'Show the current timestamp'
     and return
 
     set -q theme_date_format
-    or set -l theme_date_format "+%c"
+    or set -l theme_date_format "+%d-%m-%Y %H:%M:%S"
 
     printf '%s ' (date $theme_date_format)
 end
